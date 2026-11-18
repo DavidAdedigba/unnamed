@@ -1,12 +1,17 @@
-import { useState,useEffect } from "react";
+import { useEffect } from "react";
 
 import PullChord from "../pull-cord"
 
-export default function ThemeToggler() {
+interface ThemeTogglerProps {
+    isDarkMode:boolean;
+    setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>
+}
 
-    const [ isDarkMode,setIsDarkMode ] = useState<boolean>(() => {
-        return localStorage.getItem("theme") === "dark";
-    })
+export default function ThemeToggler({
+    isDarkMode,
+    setIsDarkMode,
+}: ThemeTogglerProps) {
+
 
     useEffect(() => {
         document.documentElement.classList.toggle("dark", isDarkMode);
