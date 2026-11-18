@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+:root {
+  --text: #6E6E73;
+  --text-h: #101010;
+  --accent-text: #C2410C;
+  --bg: #FFFFFF;
+  --accent-bg: #F5F5F5;
+  --border: red;
+
+  --newsreader: 'Newsreader', serif;
+  --teachers: 'Teachers', sans-serif;
+  --six-caps: 'Six Caps', sans-serif;
+
+  font: 18px/145% var(--teachers);
+  letter-spacing: 0;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width:700px) {
+    font-size: 16px;
+  }
+
+}
+
+:root.dark {
+  --text: #A1A1A1;
+    --text-h: #F5F5F5;
+    --accent-text: #EA580C;
+    --bg: #010101;
+    --accent-bg: #1B1A18;
+    --border: blue;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 128px;
+
+  @media( max-width:1114px ) {
+    padding: 64px 32px;
+  }
+
+  @media ( max-width:700px ) {
+    padding: 32px 4px;
+  }
+}
+
+h1,h2,h3 {
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--text-h)
+}
+h2 {
+  font-family: var(--six-caps);
+  font-size: clamp(10rem,13.5rem,18rem)
+}
+h1 {
+  font-family: var(--newsreader);
+  font-size: clamp(3rem, 6rem, 9rem);
+  font-style: italic;
+}
+h2 {
+  font-family: var(--six-caps);
+  font-size: clamp(10rem,13.5rem,18rem)
+}
+h3,h4 {
+  font-family: var(--newsreader);
+  font-size: clamp(2rem, 3rem, 3.5rem);
+  font-style: italic;
+}
+
+p {
+  font-weight: 800;
+}
+
+/* @media ( prefers-color-scheme:dark ) {
+  
+  :root {
+    --text: #A1A1A1;
+    --text-h: #F5F5F5;
+    --accent-text: #EA580C;
+    --bg: #010101;
+    --accent-bg: #1B1A18;
+    --border: blue;
+  }
+} */
+
+#root {
+  width: 1440px;
+  max-width: 100%;
+  min-height: 100svh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: var(--bg);
+  color: var(--text);
+  
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+/*
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+} */
