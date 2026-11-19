@@ -66,8 +66,19 @@ h2 {
 }
 h1 {
   font-family: var(--newsreader);
-  font-size: clamp(3rem, 6rem, 9rem);
+  font-size: 9rem;
   font-style: italic;
+  text-align:center;
+
+  @media ( max-width:1286px ) {
+    font-size: 7.75rem;
+  }
+  @media ( max-width:1114px ) {
+    font-size: 5.35rem;
+  }
+  @media (max-width:700px) {
+    font-size: 3.35rem;
+  }
 }
 h2 {
   font-family: var(--six-caps);
@@ -75,12 +86,38 @@ h2 {
 }
 h3,h4 {
   font-family: var(--newsreader);
-  font-size: clamp(2rem, 3rem, 3.5rem);
+  font-size: 3.5rem;
   font-style: italic;
+
+  @media ( max-width:1114px ) {
+    font-size: 3rem;
+  }
+  @media (max-width:700px) {
+    font-size: 2rem;
+  }
 }
 
 p {
-  font-weight: 800;
+  font-weight: 500;
+}
+.accent-p {
+  font-size: 15rem;
+  color: var(--accent-text);
+
+  @media ( max-width:700px ) {
+    font-size: 1.25rem;
+  }
+}
+a {
+  font-weight: 500;
+
+}
+::selection {
+
+}
+
+button {
+  cursor:pointer;
 }
 
 /* @media ( prefers-color-scheme:dark ) {
