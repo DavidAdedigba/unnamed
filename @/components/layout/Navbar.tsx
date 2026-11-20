@@ -20,7 +20,7 @@ export default function Navbar({
                     onClick={() => setOpenMenu(!openMenu)}
                     src={isDarkMode ? "/icons/menu-dark.svg" : "/icons/menu.svg"} 
                     alt="Menu icon" 
-                    className="size-8"
+                    className="size-8 cursor-pointer"
                 />
 
                 {openMenu && (

@@ -50,3 +50,31 @@ export const mobileProjects = [
         experience: "What an expereince i've had lmao"
     }
 ]
+
+
+export const workExperience = [
+    {
+        name: "Zenfipay",
+        role: "Frontend Engineer",
+        location: "Remote, Nigeria",
+        duration: "2025 - Present",
+        techBranch: "Fintech",
+        logo: "",
+    },
+    {
+        name: "Zenstack Technologies",
+        role: "Frontend Engineer",
+        location: "Remote, Nigeria",
+        duration: "2026 - Present",
+        techBranch: "Agency",
+        logo: "",
+    },
+    {
+        name: "SFExclusives",
+        role: "Web Developer",
+        location: "Remote, UK",
+        duration: "2025 - Present",
+        techBranch: "E-Commerce",
+        logo: "",
+    }
+]
