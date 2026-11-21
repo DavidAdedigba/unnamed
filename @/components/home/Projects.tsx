@@ -1,7 +1,14 @@
 import { useState } from "react"
 // import { motion } from "motion/react";
 
-import { projects } from "../../lib/data";
+import {
+    Select,
+    SelectTrigger,
+    SelectValue,
+    SelectContent,
+    SelectItem,
+} from "../../components/ui/select"
+import { webProjects,mobileProjects } from "../../lib/data";
 
 interface ProjectProps {
     isDarkMode:boolean;
@@ -15,10 +22,9 @@ type  FilterOptions = "WEB" | "MOBILE"
 export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
     const [ filter,setFilter ] = useState<FilterOptions>("WEB")
-    
 
-    const webProjects = projects.find((p) => p.platform === "web")?.projects
-    const mobileProjects = projects.find((p) => p.platform === "mobile")?.projects
+    const selectedLabel = filter === "WEB" ? `Web [${webProjects.length}]` : `Mobile [${mobileProjects.length}]`
+    
 
     return (
 
@@ -29,30 +35,64 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                 <h3 className="w-51.5 md:w-2/6">Projects With A Pulse.</h3>
 
                 {/* FILTER */}
-                <select
+                {/* <select
                     name="projects"
                     id="projects"
                     value={filter}
                     onChange={(e) => setFilter(e.target.value as FilterOptions)}
-                    className={` cursor-pointer focus:outline-none appearance-none bg-size-1rem bg-position-[right_0.75rem_center] bg-no-repeat pr-10 ${isDarkMode ? "bg-[url(/icons/filter-dark.svg)]" : "bg-[url('/icons/filter.svg')]"}`}
+                    className={` w-2/6 cursor-pointer focus:outline-none appearance-none bg-size-1rem bg-position-[right_0.75rem_center] bg-no-repeat pr-10 ${isDarkMode ? "bg-[url(/icons/filter-dark.svg)]" : "bg-[url('/icons/filter.svg')]"}`}
                 >
                     <option value="WEB">Web projects [{webProjects?.length ?? 0}]</option>
                     <option value="MOBILE"> Mobile projects [{mobileProjects?.length ?? 0}]</option>
-                </select>
+                </select> */}
+
+                <Select 
+                    value={filter}
+                    onValueChange={(value) => setFilter(value as FilterOptions)}
+                >
+                    <SelectTrigger className={` w-fit cursor-pointer focus:outline-none border-none [&>svg]:hidden bg-size-1rem bg-position-[right_0.75rem_center] bg-no-repeat pr-10 ${isDarkMode ? "bg-[url(/icons/filter-dark.svg)]" : "bg-[url('/icons/filter.svg')]"}`} >
+                        <SelectValue> {selectedLabel} </SelectValue>
+                    </SelectTrigger>
+                    <SelectContent 
+                        alignItemWithTrigger={false} 
+                        align="end" 
+                        sideOffset={4}
+                        className="bg-white drop-shadow-2xl ring-0 rounded-sm"
+                    >
+                        <SelectItem value="WEB" className="p-2.5">Web [{webProjects?.length ?? 0}]</SelectItem>
+                        <SelectItem value="MOBILE" className="p-2.5">Mobile [{mobileProjects?.length ?? 0}]</SelectItem>
+                    </SelectContent>
+
+                </Select>
             </header>
 
             {/* FILTER CONTENT */}
             <>
                 {filter === "WEB" && (
-                    <div className="w-full py-5 flex justify-between gap-1.5 items-center px-0.5">
+                    <div className="w-full py-5 grid grid-cols-2 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
                         {webProjects?.map((p) => (
-                            <div className=" w-6/12 space-y-4" key={p.id}>
+                            <a 
+                                key={p.id}
+                                className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
+                                href={p.link}
+                            >
 
-                                <div className="w-full min-h-[25vh] md:min-h-[30vh] bg-black rounded-sm" />
+                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black rounded-sm" />
 
-                                <h4 className=" not-italic">{p.title}</h4>
+                                <div className="flex items-start justify-between px-2.5">
+                                    <div className="">
+                                        <h4 className=" not-italic">{p.title}</h4>
+                                        <span className="font-regular">{p.type}</span>
+                                    </div>
 
-                            </div>
+                                    <img
+                                        src={isDarkMode ? "/icons/go-to-dark.svg" : "/icons/go-to.svg"}
+                                        alt="go-to icon"
+                                        className="size-3.5"
+                                    />
+                                </div>
+
+                            </a>
                         ))}
                     </div>
                 )}
