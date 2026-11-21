@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
 
 import { projects } from "../../lib/data";
 
@@ -8,17 +8,15 @@ interface ProjectProps {
 }
 type  FilterOptions = "WEB" | "MOBILE"
 
-interface FilterProps {
-    filter: FilterOptions;
-}
+// interface FilterProps {
+//     filter: FilterOptions;
+// }
 
 export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
-    const [ openFilter,setOpenFilter ] = useState<boolean>(false);
     const [ filter,setFilter ] = useState<FilterOptions>("WEB")
+    
 
-    const web = projects.filter(item => item.platform.toLowerCase() === "web")
-    const mobile = projects.filter(item => item.platform === "mobile")
     const webProjects = projects.find((p) => p.platform === "web")?.projects
     const mobileProjects = projects.find((p) => p.platform === "mobile")?.projects
 
