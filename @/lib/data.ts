@@ -1,53 +1,62 @@
-export const webProjects = [
+export const projects = [
     {
-        id: 0,
-        title: "Samsung",
-        type: "Product showcase/E-commerce",
-        link: "https://www.samsung.com/uk/",
-    },
-    {
-        id: 1,
-        title: "Dave bits",
-        type: "Components library",
-        link: "https://www.samsung.com/uk/",
-    },
-]
-
-export const mobileProjects = [
-    {
-        id: 0,
-        title: "Real-time Collaborative Workspace",
-        slug: "rt-collaborative-workspace",
-        description: "A real-time collaborative workspace for teams to work together on projects, share files, and communicate in real-time.",
-        carouselImages: [
+        platform: "web",
+        label: "Web",
+        projects: [
             {
                 id: 0,
-                imgSrc: "",
+                title: "Samsung",
+                type: "Product showcase/E-commerce",
+                link: "https://www.samsung.com/uk/",
             },
             {
                 id: 1,
-                imgSrc: "",
+                title: "Dave bits",
+                type: "Components library",
+                link: "https://www.samsung.com/uk/",
             },
+        ]
+    },
+    {
+        platform: "mobile",
+        label: "Mobile",
+        projects: [
             {
-                id: 2,
-                imgSrc: "",
-            },
-            {
-                id: 3,
-                imgSrc: "",
-            },
-            {
-                id: 4,
-                imgSrc: "",
-            },
-        ],
-        tools: [
-            {
-                title: "React Native",
-                imgSrc: "",
+                id: 0,
+                title: "Real-time Collaborative Workspace",
+                slug: "rt-collaborative-workspace",
+                description: "A real-time collaborative workspace for teams to work together on projects, share files, and communicate in real-time.",
+                carouselImages: [
+                    {
+                        id: 0,
+                        imgSrc: "",
+                    },
+                    {
+                        id: 1,
+                        imgSrc: "",
+                    },
+                    {
+                        id: 2,
+                        imgSrc: "",
+                    },
+                    {
+                        id: 3,
+                        imgSrc: "",
+                    },
+                    {
+                        id: 4,
+                        imgSrc: "",
+                    },
+                ],
+                tools: [
+                    {
+                        title: "React Native",
+                        imgSrc: "",
+                    }
+                ],
+                experience: "What an expereince i've had lmao"
             }
-        ],
-        experience: "What an expereince i've had lmao"
+        ]
     }
 ]
 
@@ -62,7 +71,7 @@ export const workExperience = [
         logo: "",
     },
     {
-        name: "Zenstack Technologies",
+        name: "Zenstack Agency",
         role: "Frontend Engineer",
         location: "Remote, Nigeria",
         duration: "2026 - Present",
@@ -74,6 +83,14 @@ export const workExperience = [
         role: "Web Developer",
         location: "Remote, UK",
         duration: "2025 - Present",
+        techBranch: "E-Commerce",
+        logo: "",
+    },
+    {
+        name: "HNG 11",
+        role: "Frontend developer intern",
+        location: "Remote, Nigeria",
+        duration: "2023",
         techBranch: "E-Commerce",
         logo: "",
     }
