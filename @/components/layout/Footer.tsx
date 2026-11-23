@@ -11,7 +11,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
 
     return (
 
-        <footer className="w-full flex flex-col space-y-60 md:justify-between items-center px-8 py-12 md:py-16 lg:px-32">
+        <footer className="space-y-60">
             
             {/* TOP CONTENT; INTO GMAIL + SOCIAL MEDIA LINKS */}
             <div className="w-full flex flex-col space-y-1.5">

@@ -54,6 +54,19 @@ section {
     padding: 32px 4px;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 128px;
+
+  @media( max-width:1114px ) {
+    padding: 64px 32px;
+  }
+
+  @media ( max-width:700px ) {
+    padding: 32px 4px;
+  }
+}
 
 h1,h3,h4 {
   font-family: var(--newsreader);
@@ -74,10 +87,16 @@ h1 {
     font-size: 7.75rem;
   }
   @media ( max-width:1114px ) {
-    font-size: 5.35rem;
+    font-size: 5.85rem;
   }
-  @media (max-width:700px) {
+  @media ( max-width:800px ) {
+    font-size: 5.35rem
+  }
+  @media ( max-width:650px ) {
     font-size: 3.35rem;
+  }
+  @media (max-width:380px) {
+    font-size: 3rem;
   }
 }
 h2 {

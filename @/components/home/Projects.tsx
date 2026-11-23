@@ -35,17 +35,6 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                 <h3 className="w-51.5 md:w-2/6">Projects With A Pulse.</h3>
 
                 {/* FILTER */}
-                {/* <select
-                    name="projects"
-                    id="projects"
-                    value={filter}
-                    onChange={(e) => setFilter(e.target.value as FilterOptions)}
-                    className={` w-2/6 cursor-pointer focus:outline-none appearance-none bg-size-1rem bg-position-[right_0.75rem_center] bg-no-repeat pr-10 ${isDarkMode ? "bg-[url(/icons/filter-dark.svg)]" : "bg-[url('/icons/filter.svg')]"}`}
-                >
-                    <option value="WEB">Web projects [{webProjects?.length ?? 0}]</option>
-                    <option value="MOBILE"> Mobile projects [{mobileProjects?.length ?? 0}]</option>
-                </select> */}
-
                 <Select 
                     value={filter}
                     onValueChange={(value) => setFilter(value as FilterOptions)}

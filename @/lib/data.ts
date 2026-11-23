@@ -8,7 +8,7 @@ export const webProjects = [
     {
         id: 1,
         title: "Dave bits",
-        type: "Components library",
+        type: "Component library",
         link: "https://www.samsung.com/uk/",
     },
     {
