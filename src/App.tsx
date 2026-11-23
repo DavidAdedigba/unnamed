@@ -2,6 +2,7 @@ import { Routes,Route } from "react-router-dom";
 
 import Layout from "./layout";
 import Home from "./pages/Home";
+import ProjectDetailsPage from "./pages/ProjectDetails";
 
 export default function App() {
 
@@ -11,7 +12,7 @@ export default function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/:slug" element="" />
+          <Route path="/project/:slug" element={<ProjectDetailsPage />} />
         </Route>
       </Routes>
     </>

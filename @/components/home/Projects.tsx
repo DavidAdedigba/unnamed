@@ -1,5 +1,6 @@
 import { useState } from "react"
 // import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 import {
     Select,
@@ -60,13 +61,13 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                 {filter === "WEB" && (
                     <div className="w-full py-5 grid grid-cols-2 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
                         {webProjects?.map((p) => (
-                            <a 
+                            <Link 
                                 key={p.id}
                                 className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
-                                href={p.link}
+                                to={p.link}
                             >
 
-                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black rounded-sm" />
+                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black dark:bg-white rounded-sm" />
 
                                 <div className="flex items-start justify-between px-2.5">
                                     <div className="">
@@ -81,7 +82,33 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                     />
                                 </div>
 
-                            </a>
+                            </Link>
+                        ))}
+                    </div>
+                )}
+
+                {filter === "MOBILE" && (
+                    <div className="w-full py-5 grid grid-cols-2 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
+                        {mobileProjects?.map((p) => (
+                            <Link 
+                                key={p.id}
+                                to={`/project/${p.slug}`}
+                                className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
+                            >
+
+                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black dark:bg-white rounded-sm" />
+
+                                <div className="flex items-start justify-between px-2.5">
+
+                                    <h4 className=" not-italic">{p.title}</h4>
+                                    <img
+                                        src={isDarkMode ? "/icons/go-to-dark.svg" : "/icons/go-to.svg"}
+                                        alt="go-to icon"
+                                        className="size-3.5"
+                                    />
+                                </div>
+
+                            </Link>
                         ))}
                     </div>
                 )}
