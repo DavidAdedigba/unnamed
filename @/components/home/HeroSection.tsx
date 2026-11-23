@@ -25,7 +25,7 @@ export default function HeroSection() {
             <div className="flex flex-col lg:flex-row lg:justify-between border border-[#A1A1A1] dark:border-[#7B7B7B] rounded-[3px] p-2.5">
 
                 {/* PICTURES */}
-                <div className="bg-[#F5F5F5] dark:bg-black w-full lg:w-1/2 min-h-[50vh] lg:min-h-[65vh]" />
+                <div className="bg-black dark:bg-[#F5F5F5] w-full lg:w-1/2 min-h-[50vh] lg:min-h-[65vh]" />
 
                 {/* TEXT */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center">
