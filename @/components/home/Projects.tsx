@@ -32,7 +32,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
             <header className="w-full flex justify-between items-end">
 
-                <h3 className="w-51.5 md:w-2/6">Projects With A Pulse.</h3>
+                <h3 className="w-51.5 md:w-[45%] lg:w-2/6">Projects With A Pulse.</h3>
 
                 {/* FILTER */}
                 <Select 

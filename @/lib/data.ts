@@ -1,3 +1,22 @@
+export const marginalia = [
+    {
+        heading: "The Machinery",
+        content: "TypeScript, TailwindCSS, React, React Native, Expo, NextJS, Framer-motion, GSAP, Redux, NextAuth, GitHub."
+    },
+    {
+        heading: "After Hours",
+        content: "Music, movies & series, tech gadgets, football, gaming, photography.. etc"
+    },
+    {
+        heading: "Side Quests",
+        content: "Backend development, payment infrastructure, distributed systems, cyber-security."
+    },
+    {
+        heading: "Write Ups",
+        content: "Nothing to see yet."
+    }
+]
+
 export const webProjects = [
     {
         id: 0,
@@ -25,15 +44,15 @@ export const webProjects = [
     },
     {
         id: 4,
-        title: "CTRL",
-        type: "E-commerce",
-        link: "https://www.samsung.com/uk/",
+        title: "Zenfipay",
+        type: "Landing page",
+        link: "https://lp-lovat-sigma.vercel.app",
     },
     {
         id: 5,
         title: "CTRL",
         type: "E-commerce",
-        link: "https://www.samsung.com/uk/",
+        link: "https://new-landing-page-sandy.vercel.app",
     },
 ]
 

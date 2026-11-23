@@ -16,8 +16,6 @@ export default function Home() {
             <HeroSection />
             <ExperienceSection />
             <ProjectSection isDarkMode={isDarkMode} />
-            <h2> Accent header</h2>
-            <h3> Regular header</h3>
         </>
     )
 }

@@ -77,7 +77,6 @@ h1,h3,h4 {
 }
 h2 {
   font-family: var(--six-caps);
-  font-size: clamp(10rem,13.5rem,18rem)
 }
 h1 {
   font-size: 9rem;
@@ -100,11 +99,28 @@ h1 {
   }
 }
 h2 {
+  width: 100%;
   font-family: var(--six-caps);
-  font-size: clamp(10rem,13.5rem,18rem);
+  font-size: 13.5rem;
   font-weight: 600;
   line-height: 100%;
-  color: var(--text-h)
+  color: var(--text-h);
+
+  @media ( max-width:1114px ) {
+    font-size:18rem;
+  }
+  @media ( max-width:800px ) {
+    font-size:16.75rem;
+  }
+  @media ( max-width:700px ) {
+    font-size: 11rem;
+  }
+  @media ( max-width:410px ) {
+    font-size: 10.25rem
+  }
+  @media ( max-width:376px ) {
+    font-size: 9.5rem
+  }
 }
 h3 {
   font-size: 3.5rem;

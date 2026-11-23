@@ -7,7 +7,7 @@ export default function ExperienceSection() {
 
         <section className="">
 
-            <h3>Chronicles Of Employment.</h3>
+            <h3 className="md:w-[45%] lg:w-full">Chronicles Of Employment.</h3>
 
             <div className="space-y-2.5">
 
