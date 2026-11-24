@@ -50,8 +50,8 @@ export const webProjects = [
     },
     {
         id: 5,
-        title: "CTRL",
-        type: "E-commerce",
+        title: "Token",
+        type: "Design token system",
         link: "https://new-landing-page-sandy.vercel.app",
     },
 ]
@@ -59,7 +59,147 @@ export const webProjects = [
 export const mobileProjects = [
     {
         id: 0,
-        title: "Real-time Collaborative Workspace",
+        title: "15 Minutes Away",
+        slug: "15min-away",
+        description: "Click anywhere and see which amenities (pahramcy, grocery store, park, playground, transit, hospital etc) are withing a 15 minute walk.",
+        carouselImages: [
+            {
+                id: 0,
+                imgSrc: "",
+            },
+            {
+                id: 1,
+                imgSrc: "",
+            },
+            {
+                id: 2,
+                imgSrc: "",
+            },
+            {
+                id: 3,
+                imgSrc: "",
+            },
+            {
+                id: 4,
+                imgSrc: "",
+            },
+        ],
+        tools: [
+            {
+                title: "React Native",
+                imgSrc: "",
+            }
+        ],
+        experience: "What an expereince i've had lmao"
+    },
+    {
+        id: 0,
+        title: "Watch It",
+        slug: "watch-it",
+        description: "Take a picture of a food item or mutliple food items and you see its nutritional values. You can pick mulitple to see the toal accumulated calories.",
+        carouselImages: [
+            {
+                id: 0,
+                imgSrc: "",
+            },
+            {
+                id: 1,
+                imgSrc: "",
+            },
+            {
+                id: 2,
+                imgSrc: "",
+            },
+            {
+                id: 3,
+                imgSrc: "",
+            },
+            {
+                id: 4,
+                imgSrc: "",
+            },
+        ],
+        tools: [
+            {
+                title: "React Native",
+                imgSrc: "",
+            }
+        ],
+        experience: "What an expereince i've had lmao"
+    },
+    {
+        id: 0,
+        title: "Sky map",
+        slug: "sky-map",
+        description: "Bundle a static star catalog JSON and use the compass and accelerometer to show which constellation you're pointing at with your phone.",
+        carouselImages: [
+            {
+                id: 0,
+                imgSrc: "",
+            },
+            {
+                id: 1,
+                imgSrc: "",
+            },
+            {
+                id: 2,
+                imgSrc: "",
+            },
+            {
+                id: 3,
+                imgSrc: "",
+            },
+            {
+                id: 4,
+                imgSrc: "",
+            },
+        ],
+        tools: [
+            {
+                title: "React Native",
+                imgSrc: "",
+            }
+        ],
+        experience: "What an expereince i've had lmao"
+    },
+    {
+        id: 0,
+        title: "Gamer",
+        slug: "gamer",
+        description: "iMessage games, but for android?",
+        carouselImages: [
+            {
+                id: 0,
+                imgSrc: "",
+            },
+            {
+                id: 1,
+                imgSrc: "",
+            },
+            {
+                id: 2,
+                imgSrc: "",
+            },
+            {
+                id: 3,
+                imgSrc: "",
+            },
+            {
+                id: 4,
+                imgSrc: "",
+            },
+        ],
+        tools: [
+            {
+                title: "React Native",
+                imgSrc: "",
+            }
+        ],
+        experience: "What an expereince i've had lmao"
+    },
+    {
+        id: 0,
+        title: "Real-time Collaborative Workspace Manager",
         slug: "rt-collaborative-workspace",
         description: "A real-time collaborative workspace for teams to work together on projects, share files, and communicate in real-time.",
         carouselImages: [

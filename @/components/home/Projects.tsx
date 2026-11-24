@@ -65,6 +65,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                 key={p.id}
                                 className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
                                 to={p.link}
+                                target="_blank"
                             >
 
                                 <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black dark:bg-white rounded-sm" />
