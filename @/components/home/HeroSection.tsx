@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Icon from "../../components/ui/Icon"
 
 interface HeroSectionProps {
     isDarkMode: boolean
@@ -35,11 +36,7 @@ export default function HeroSection({ isDarkMode }: HeroSectionProps) {
                     {/* LINKS */}
                     <div className="flex gap-12 items-center">
                         <Link to="" className="flex justify-center items-center gap-1">
-                            <img 
-                                src={isDarkMode ? "/icons/github-dark.svg" : "/icons/github.svg"} 
-                                alt="Github icon" 
-                                className="size-4 opacity-100 visited:opacity-100 active:opacity-100 focus:opacity-100"
-                            />
+                            <Icon src="/icons/github.svg" />
                             <span>Github</span>
                         </Link>
                         <Link to='' className="flex justify-center items-center gap-1">
@@ -51,11 +48,7 @@ export default function HeroSection({ isDarkMode }: HeroSectionProps) {
                             <span>LinkedIn</span>
                         </Link>
                         <Link to="" className="flex justify-center items-center gap-1">
-                            <img 
-                                src={isDarkMode ? "/icons/resume-dark.svg" : "/icons/resume.svg"} 
-                                alt="Github icon" 
-                                className="size-4 opacity-100 visited:opacity-100 active:opacity-100 focus:opacity-100"
-                            />
+                            <Icon src="/icons/resume.svg" />
                             <span>Resumé</span>
                         </Link>
                     </div>

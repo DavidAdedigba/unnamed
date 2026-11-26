@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { motion } from "motion/react";
+// import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
 import {
@@ -33,14 +33,14 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
             <header className="w-full flex items-start justify-between px-2 md:px-8 lg:px-16">
 
-                <h1>Projects With A Pulse.</h1>
+                <h1 className="hidden md:block">Projects With A Pulse.</h1>
 
                 {/* FILTER */}
                 <Select 
                     value={filter}
                     onValueChange={(value) => setFilter(value as FilterOptions)}
                 >
-                    <SelectTrigger className={` w-fit cursor-pointer focus:outline-none border-none [&>svg]:hidden bg-size-1rem bg-position-[right_0.75rem_center] bg-no-repeat pr-10 ${isDarkMode ? "bg-[url(/icons/filter-dark.svg)]" : "bg-[url('/icons/filter.svg')]"}`} >
+                    <SelectTrigger className={` bg-none w-fit cursor-pointer focus:outline-none border-none [&>svg]:hidden bg-size-1rem bg-position-[right_0.75rem_center] bg-no-repeat pr-10 ${isDarkMode ? "bg-[url(/icons/filter-dark.svg)]" : "bg-[url('/icons/filter.svg')]"}`} >
                         <SelectValue> {selectedLabel} </SelectValue>
                     </SelectTrigger>
                     <SelectContent 
@@ -59,17 +59,17 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
             {/* FILTER CONTENT */}
             <>
                 {filter === "WEB" && (
-                    <div className="w-full py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
+                    <div className="w-full py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2.5 gap-y-8 lg:[&:has(>a:hover)>a:not(:hover)]:opacity-30">
                         {webProjects?.map((p) => (
-                            <motion.a 
+                            <a 
                                 key={p.id}
                                 className=" w-full g:w-5/6 space-y-2 opacity-100 transition-opacity duration-300"
                                 href={p.link}
                                 target="_blank"
-                                initial={{ y:50, opacity:0 }}
-                                whileInView={{ y:0, opacity:1 }}
-                                viewport={{ once:true }}
-                                transition={{ duration:0.6, delay:0.35}}
+                                // initial={{ y:50, opacity:0 }}
+                                // whileInView={{ y:0, opacity:1 }}
+                                // viewport={{ once:true }}
+                                // transition={{ duration:0.6, delay:0.35}}
                             >
 
                                 <div className="w-full min-h-53.75 md:min-h-71.25 bg-blue-900 rounded-[3px]" />
@@ -84,7 +84,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                     />
                                 </div>
 
-                            </motion.a>
+                            </a>
                         ))}
                     </div>
                 )}

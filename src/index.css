@@ -107,7 +107,7 @@
   --border: blue;
 }
 
-#root {
+/* #root {
   width: 1440px;
   max-width: 100%;
   min-height: 100svh;
@@ -118,7 +118,7 @@
   background: var(--bg);
   color: var(--text);
 
-}
+} */
 
 body {
   margin: 0;
