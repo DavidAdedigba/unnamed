@@ -1,5 +1,5 @@
 import { useState } from "react"
-// import { motion } from "motion/react";
+import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 
 import {
@@ -61,14 +61,17 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                 {filter === "WEB" && (
                     <div className="w-full py-5 grid grid-cols-2 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
                         {webProjects?.map((p) => (
-                            <Link 
+                            <motion.a 
                                 key={p.id}
                                 className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
-                                to={p.link}
+                                href={p.link}
                                 target="_blank"
+                                initial={{ y:50, opacity:0 }}
+                                whileInView={{ y:0, opacity:1 }}
+                                transition={{ duration:0.6, delay:0.35}}
                             >
 
-                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black dark:bg-white rounded-sm" />
+                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-blue-900 rounded-sm" />
 
                                 <div className="flex items-start justify-between px-2.5">
                                     <div className="">
@@ -83,7 +86,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                     />
                                 </div>
 
-                            </Link>
+                            </motion.a>
                         ))}
                     </div>
                 )}
@@ -97,7 +100,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                 className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
                             >
 
-                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-black dark:bg-white rounded-sm" />
+                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-blue-950 rounded-sm" />
 
                                 <div className="flex items-start justify-between px-2.5">
 

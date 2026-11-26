@@ -93,10 +93,10 @@ export const mobileProjects = [
         experience: "What an expereince i've had lmao"
     },
     {
-        id: 0,
-        title: "Watch It",
-        slug: "watch-it",
-        description: "Take a picture of a food item or mutliple food items and you see its nutritional values. You can pick mulitple to see the toal accumulated calories.",
+        id: 1,
+        title: "Cook It",
+        slug: "cook-it",
+        description: "Take a picture of a bunch of food items, you have in your house, the app detects them and matches the algorithm with a meal that matches those exact ingredients, and also gives you the recipe to make said meal.",
         carouselImages: [
             {
                 id: 0,
@@ -128,7 +128,7 @@ export const mobileProjects = [
         experience: "What an expereince i've had lmao"
     },
     {
-        id: 0,
+        id: 2,
         title: "Sky map",
         slug: "sky-map",
         description: "Bundle a static star catalog JSON and use the compass and accelerometer to show which constellation you're pointing at with your phone.",
@@ -163,7 +163,7 @@ export const mobileProjects = [
         experience: "What an expereince i've had lmao"
     },
     {
-        id: 0,
+        id: 3,
         title: "Gamer",
         slug: "gamer",
         description: "iMessage games, but for android?",
@@ -197,41 +197,6 @@ export const mobileProjects = [
         ],
         experience: "What an expereince i've had lmao"
     },
-    {
-        id: 0,
-        title: "Real-time Collaborative Workspace Manager",
-        slug: "rt-collaborative-workspace",
-        description: "A real-time collaborative workspace for teams to work together on projects, share files, and communicate in real-time.",
-        carouselImages: [
-            {
-                id: 0,
-                imgSrc: "",
-            },
-            {
-                id: 1,
-                imgSrc: "",
-            },
-            {
-                id: 2,
-                imgSrc: "",
-            },
-            {
-                id: 3,
-                imgSrc: "",
-            },
-            {
-                id: 4,
-                imgSrc: "",
-            },
-        ],
-        tools: [
-            {
-                title: "React Native",
-                imgSrc: "",
-            }
-        ],
-        experience: "What an expereince i've had lmao"
-    }
 ]
 
 export const workExperience = [
@@ -241,7 +206,7 @@ export const workExperience = [
         location: "Remote, Nigeria",
         duration: "2025 - Present",
         techBranch: "Fintech",
-        logo: "",
+        logo: "/icons/zenfipay.svg",
     },
     {
         name: "Zenstack Agency",
@@ -259,12 +224,4 @@ export const workExperience = [
         techBranch: "E-Commerce",
         logo: "",
     },
-    {
-        name: "HNG 11",
-        role: "Frontend developer intern",
-        location: "Remote, Nigeria",
-        duration: "2023",
-        techBranch: "E-Commerce",
-        logo: "",
-    }
 ]

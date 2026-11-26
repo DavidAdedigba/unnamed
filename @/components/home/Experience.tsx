@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 import { workExperience } from "../../lib/data"
 
 
@@ -12,11 +14,18 @@ export default function ExperienceSection() {
             <div className="space-y-2.5">
 
                 {workExperience.map((company) => (
-                    <div key={company.name} className="flex flex-col md:flex-row border-b border-[#A1A1A1] gap-2.5 p-2.5 md:items-center">
+                    <motion.div 
+                        key={company.name} 
+                        className="flex flex-col md:flex-row border-b border-[#A1A1A1] gap-2.5 p-2.5 md:items-center"
+                        initial={{ y:50, opacity:0 }}
+                        whileInView={{ y:0, opacity:1 }}
+                        transition={{ duration:0.6, delay:0.3 }}
+                        
+                    >
 
                         {/* LOGO */}
-                        <div className="size-9 bg-yellow-600 rounded-xs overflow-hidden">
-                            <img src={company.logo} alt={`${company.name}'s logo`} className="w-full" />
+                        <div className="w-9 rounded-xs overflow-hidden">
+                            <img src={company.logo} alt={`${company.name}'s logo`} className=" scale-100" />
                         </div>
 
                         <div className="w-full flex justify-between items-center">
@@ -33,7 +42,7 @@ export default function ExperienceSection() {
                                 <p className="">{company.duration}</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </section>

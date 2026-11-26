@@ -13,7 +13,7 @@ export default function Home() {
     return (
 
         <>
-            <HeroSection />
+            <HeroSection isDarkMode={isDarkMode} />
             <ExperienceSection />
             <ProjectSection isDarkMode={isDarkMode} />
         </>

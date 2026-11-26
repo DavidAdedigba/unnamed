@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom';
-import Navbar from "../@/components/layout/Navbar"
+// import Navbar from "../@/components/layout/Navbar"
 import Footer from "../@/components/layout/Footer"
 import ThemeToggler from "../@/components/layout/ThemeToggler"
 
@@ -16,7 +16,7 @@ export default function Layout() {
                 isDarkMode={isDarkMode}
                 setIsDarkMode={setIsDarkMode}
             />
-            <Navbar isDarkMode={isDarkMode} />
+            {/* <Navbar isDarkMode={isDarkMode} /> */}
             <Outlet />
             <Footer isDarkMode={isDarkMode} />
         </>
