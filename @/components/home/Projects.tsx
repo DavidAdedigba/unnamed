@@ -29,9 +29,9 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
     return (
 
-        <section>
+        <section className="w-full controlled-section-no-pad">
 
-            <header className="w-full flex justify-between items-end">
+            <header className="w-full flex items-start justify-between px-2 md:px-8 lg:px-16">
 
                 <h1>Projects With A Pulse.</h1>
 
