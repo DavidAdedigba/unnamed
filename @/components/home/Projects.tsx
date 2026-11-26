@@ -75,7 +75,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                 <div className="w-full min-h-53.75 md:min-h-71.25 bg-blue-900 rounded-[3px]" />
 
                                 <div className="flex items-start justify-between px-1.5">
-                                    <p className="italic text-(--text-h)">{p.title}</p>
+                                    <p className="text-(--text-h)">{p.title}</p>
 
                                     <img
                                         src={isDarkMode ? "/icons/go-to-dark.svg" : "/icons/go-to.svg"}
@@ -102,7 +102,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
                                 <div className="flex items-start justify-between px-2.5">
 
-                                    <h4 className=" not-italic">{p.title}</h4>
+                                    <p className=" not-italic">{p.title}</p>
                                     <img
                                         src={isDarkMode ? "/icons/go-to-dark.svg" : "/icons/go-to.svg"}
                                         alt="go-to icon"

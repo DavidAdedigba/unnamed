@@ -36,7 +36,11 @@ export default function HeroSection({ isDarkMode }: HeroSectionProps) {
                     {/* LINKS */}
                     <div className="flex gap-12 items-center">
                         <Link to="" className="flex justify-center items-center gap-1">
-                            <Icon src="/icons/github.svg" />
+                            <img 
+                                src={isDarkMode ? "/icons/github-dark.svg" : "/icons/github.svg"} 
+                                alt="Github icon" 
+                                className="size-4"
+                            />
                             <span>Github</span>
                         </Link>
                         <Link to='' className="flex justify-center items-center gap-1">
