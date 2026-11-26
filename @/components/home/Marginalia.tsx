@@ -8,7 +8,7 @@ interface MarginaliaProps {
 export default function Marginalia({ isDarkMode }: MarginaliaProps) {
 
     return (
-        <article className="w-full min-h-screen">
+        <article className="w-full min-h-screen overflow-hidden">
 
             <div style={{ width: '100%', height: '600px', position: 'relative' }}>
 
