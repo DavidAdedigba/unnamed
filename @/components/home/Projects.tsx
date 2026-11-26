@@ -72,7 +72,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                 transition={{ duration:0.6, delay:0.35}}
                             >
 
-                                <div className="w-full min-h-[225px] md:min-h-[200px] lg:min-h-[285px] bg-blue-900 rounded-sm" />
+                                <div className="w-full min-h-[225px] md:min-h-[285px] bg-blue-900 rounded-sm" />
 
                                 <div className="flex items-start justify-between px-1.5">
                                     <p className="italic text-(--text-h)">{p.title}</p>
