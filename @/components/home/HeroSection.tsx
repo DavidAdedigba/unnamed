@@ -62,7 +62,7 @@ export default function HeroSection({ isDarkMode }: HeroSectionProps) {
                 </div>
             </div>
 
-            <Marginalia />
+            <Marginalia isDarkMode={isDarkMode} />
         </section>
     )
 }

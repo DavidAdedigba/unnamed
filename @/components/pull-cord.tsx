@@ -2081,7 +2081,7 @@ export function PullCord({
 			data-disabled={disabled || undefined}
 			{...props}
 			className={cn(
-				"group/pull-cord relative h-55 w-20 shrink-0 select-none data-disabled:cursor-not-allowed data-disabled:opacity-50",
+				"group/pull-cord relative h-55 w-20 z-50 shrink-0 select-none data-disabled:cursor-not-allowed data-disabled:opacity-50",
 				className,
 			)}
 		>

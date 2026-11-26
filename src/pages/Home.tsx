@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import HeroSection from "../../@/components/home/HeroSection"
-import ExperienceSection from "../../@/components/home/Experience"
+// import ExperienceSection from "../../@/components/home/Experience"
 import ProjectSection from "../../@/components/home/Projects"
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
 
         <>
             <HeroSection isDarkMode={isDarkMode} />
-            <ExperienceSection />
             <ProjectSection isDarkMode={isDarkMode} />
         </>
     )
