@@ -63,7 +63,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                         {webProjects?.map((p) => (
                             <motion.a 
                                 key={p.id}
-                                className=" w-full h-[450px] lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
+                                className=" w-fulllg:w-5/6 space-y-2 lg:space-y-4 opacity-100 transition-opacity duration-300"
                                 href={p.link}
                                 target="_blank"
                                 initial={{ y:50, opacity:0 }}
@@ -72,13 +72,10 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                 transition={{ duration:0.6, delay:0.35}}
                             >
 
-                                <div className="w-full min-h-[25vh] md:min-h-[35vh] lg:min-h-[50vh] bg-blue-900 rounded-sm" />
+                                <div className="w-full min-h-[225px] md:min-h-[200px] lg:min-h-[285px] bg-blue-900 rounded-sm" />
 
-                                <div className="flex items-start justify-between px-2.5">
-                                    <div className="">
-                                        <h4 className=" not-italic">{p.title}</h4>
-                                        <span className="font-regular">{p.type}</span>
-                                    </div>
+                                <div className="flex items-start justify-between px-1.5">
+                                    <p className="italic text-(--text-h)">{p.title}</p>
 
                                     <img
                                         src={isDarkMode ? "/icons/go-to-dark.svg" : "/icons/go-to.svg"}
