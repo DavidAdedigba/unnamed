@@ -76,6 +76,10 @@ section {
   width: 1024px;
   max-width: 100%;
   padding: 64px 128px;
+
+  @media ( max-width:700px ) {
+    padding: 64px 4px;
+  }
 }
 footer {
   display: flex;
