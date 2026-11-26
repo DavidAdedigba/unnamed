@@ -250,6 +250,20 @@ button {
   color: var(--text-h)
 }
 
+
+/* ANIMATIONS */
+@keyframes marquee {
+  from {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(-50%)
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
 /* @media ( prefers-color-scheme:dark ) {
 
   :root {

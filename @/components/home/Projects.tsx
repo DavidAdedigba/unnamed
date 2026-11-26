@@ -33,7 +33,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
 
             <header className="w-full flex justify-between items-end">
 
-                <h3 className="w-51.5 md:w-[45%] lg:w-2/6">Projects With A Pulse.</h3>
+                <h1>Projects With A Pulse.</h1>
 
                 {/* FILTER */}
                 <Select 
@@ -59,15 +59,16 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
             {/* FILTER CONTENT */}
             <>
                 {filter === "WEB" && (
-                    <div className="w-full py-5 grid grid-cols-2 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
+                    <div className="w-full py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
                         {webProjects?.map((p) => (
                             <motion.a 
                                 key={p.id}
-                                className=" w-full lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
+                                className=" w-full h-[450px] lg:w-5/6 space-y-4 opacity-100 transition-opacity duration-300"
                                 href={p.link}
                                 target="_blank"
                                 initial={{ y:50, opacity:0 }}
                                 whileInView={{ y:0, opacity:1 }}
+                                viewport={{ once:true }}
                                 transition={{ duration:0.6, delay:0.35}}
                             >
 

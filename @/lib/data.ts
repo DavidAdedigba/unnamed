@@ -17,6 +17,59 @@ export const marginalia = [
     }
 ]
 
+export const machinery = [
+    {
+        id: 0,
+        img: "/icons/tailwind.svg",
+        tool: "TailwindCSS"
+    },
+    {
+        id: 1,
+        img: "/icons/typescript.svg",
+        tool: "TypeScript"
+    },
+    {
+        id: 2,
+        img: "/icons/react.svg",
+        tool: "React"
+    },
+    {
+        id: 3,
+        img: "/icons/nextjs.svg",
+        tool: "NextJS"
+    },
+    {
+        id: 4,
+        img: "/icons/react.svg",
+        tool: "ReactNative"
+    },
+    {
+        id: 5,
+        img: "/icons/expo.svg",
+        tool: "Expo"
+    },
+    {
+        id: 6,
+        img: "/icons/motion.svg",
+        tool: "Motion"
+    },
+    {
+        id: 7,
+        img: "/icons/redux.svg",
+        tool: "Redux"
+    },
+    {
+        id: 8,
+        img: "/icons/rtl.svg",
+        tool: "React Testing Library"
+    },
+    {
+        id: 9,
+        img: "/icons/gsap.svg",
+        tool: "GSAP"
+    },
+]
+
 export const webProjects = [
     {
         id: 0,
