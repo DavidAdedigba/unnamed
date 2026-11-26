@@ -59,11 +59,11 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
             {/* FILTER CONTENT */}
             <>
                 {filter === "WEB" && (
-                    <div className="w-full py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-0.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
+                    <div className="w-full py-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2.5 gap-y-8 [&:has(>a:hover)>a:not(:hover)]:opacity-30">
                         {webProjects?.map((p) => (
                             <motion.a 
                                 key={p.id}
-                                className=" w-fulllg:w-5/6 space-y-2 lg:space-y-4 opacity-100 transition-opacity duration-300"
+                                className=" w-fulllg:w-5/6 space-y-2 opacity-100 transition-opacity duration-300"
                                 href={p.link}
                                 target="_blank"
                                 initial={{ y:50, opacity:0 }}
@@ -72,7 +72,7 @@ export default function ProjectSection({ isDarkMode }: ProjectProps) {
                                 transition={{ duration:0.6, delay:0.35}}
                             >
 
-                                <div className="w-full min-h-[225px] md:min-h-[285px] bg-blue-900 rounded-sm" />
+                                <div className="w-full min-h-[225px] md:min-h-[285px] bg-blue-900 rounded-[3px]" />
 
                                 <div className="flex items-start justify-between px-1.5">
                                     <p className="italic text-(--text-h)">{p.title}</p>
